@@ -18,7 +18,7 @@ describe('ButtonWithHooks', () => {
   });
 
   it('calls onClick function when button is clicked', () => {
-    const wrapper = shallow(<ButtonWithHooks {...props} />);
+    const wrapper = mount(<ButtonWithHooks {...props} />);
     wrapper.simulate('click');
     expect(props.onClick).toHaveBeenCalled();
   });
