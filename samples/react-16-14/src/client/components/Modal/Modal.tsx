@@ -17,6 +17,8 @@ const ModalContainer = styled.div<{ visible: boolean }>`
   transition: all 0.3s;
 `;
 
+ModalContainer.displayName = 'ModalContainer'; // This is needed for the test to pass
+
 const ModalBox = styled.div`
   background-color: #fff;
   border-radius: 5px;
@@ -26,6 +28,8 @@ const ModalBox = styled.div`
   overflow-y: auto;
 `;
 
+ModalBox.displayName = 'ModalBox';
+
 const ModalHeader = styled.div`
   display: flex;
   justify-content: space-between;
@@ -34,9 +38,13 @@ const ModalHeader = styled.div`
   border-bottom: 1px solid #ddd;
 `;
 
+ModalHeader.displayName = 'ModalHeader';
+
 const ModalTitle = styled.h2`
   margin: 0;
 `;
+
+ModalTitle.displayName = 'ModalTitle';
 
 const ModalCloseButton = styled.button`
   background: none;
@@ -45,9 +53,13 @@ const ModalCloseButton = styled.button`
   cursor: pointer;
 `;
 
+ModalCloseButton.displayName = 'ModalCloseButton';
+
 const ModalContent = styled.div`
   padding: 1rem;
 `;
+
+ModalContent.displayName = 'ModalContent';
 
 export interface ModalProps {
   title: string;
