@@ -2,7 +2,8 @@
 import './setupJsdomMocks';
 import { JSDOM } from 'jsdom';
 import { configure } from 'enzyme';
-import ReactEighteenAdapter from '@cfaester/enzyme-adapter-react-18';
+// import ReactEighteenAdapter from '@cfaester/enzyme-adapter-react-18';
+import ReactEighteenAdapter from '@mnajdova/enzyme-adapter-react-18';
 
 // Setup JSDOM
 const dom = new JSDOM('', {
